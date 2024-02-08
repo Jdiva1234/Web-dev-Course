@@ -57,8 +57,14 @@
 function bmiCalculator (weight, height){
   var  bmi =  weight/ (height * height);
   //bmi = Math.round(bmi);
-      console.log('Your BMI is ' + bmi);
-      return bmi;
+     if(bmi <= 18.5){
+       interpretation =  "Your BMI is "+bmi+", so you are underweight.";
+    }else if(bmi >= 18.5 && bmi <= 24.9){
+      interpretation = "Your BMI is "+bmi+", so you have a normal weight." ;
+    }else if (bmi > 24.9){
+     interpretation =  "Your BMI is "+bmi+", so you are overweight." ;
+    }
+    return interpretation
 }
 bmiCalculator(78, 163);
 
@@ -105,5 +111,14 @@ let nameTwo = prompt("What is their name?");
   let n = Math.random();
   n = n * 100;
   n = Math.floor(n) + 1;
+if (n < 50){
+alert(`${nameOne} and  ${nameTwo} are ${n}% compartible, You will find love soon. Don't worry hun`);
+}else{
+alert(`${nameOne} and  ${nameTwo} are ${n}% compartible. Keep learning and communicating with your partner.`);
+
+}
+
+
+
 alert(`${nameOne} and  ${nameTwo} ${n}% compartible `);
 
