@@ -117,8 +117,20 @@ alert(`${nameOne} and  ${nameTwo} are ${n}% compartible, You will find love soon
 alert(`${nameOne} and  ${nameTwo} are ${n}% compartible. Keep learning and communicating with your partner.`);
 
 }
-
-
-
 alert(`${nameOne} and  ${nameTwo} ${n}% compartible `);
 
+function isLeapYear(year){
+if(year % 4 == 0){
+  console.log("Leap year.");
+}else{
+  console.log("Not leap year.");
+}if(year %100 == 0){
+  console.log("Leap year.");
+}else{
+  console.log("Not leap year.");
+}if(year % 400 == 0){
+  console.log("Leap year.");
+}else{
+  console.log("Not leap year.");
+}
+}
