@@ -118,7 +118,7 @@ alert(`${nameOne} and  ${nameTwo} are ${n}% compartible. Keep learning and commu
 
 }
 alert(`${nameOne} and  ${nameTwo} ${n}% compartible `);
-
+//learning the if else statement
 function isLeapYear(year){
 if(year % 4 == 0){
   console.log("Leap year.");
@@ -133,4 +133,15 @@ if(year % 4 == 0){
 }else{
   console.log("Not leap year.");
 }
+}
+/**
+Learning Arrays in Javascript 
+array.length, array.include
+ */
+var nameFinder = prompt("What is your name?");
+var guestList = ["Angela","Jack", "Pan", "James","Lara", "Jason"];
+if (guestList.includes(nameFinder)){
+  alert("welcome ")
+}else{
+  alert("sorry next time ")
 }
