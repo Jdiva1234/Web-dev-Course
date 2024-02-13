@@ -148,7 +148,18 @@
 
 
 var sequence = [];
+var count = 1;
 function fixbus(sequence){
-sequence.push
+    if(count % 3 == 0 && count % 5 == 0){
+        sequence.push("FizzBuzz")
+    }else if (count % 3 == 0){
+        sequence.push("Fizz");
+    }else if(count % 5 == 0){
+        sequence.push("Buzz");
+    } else {
+        sequence.push(count);
+    }
+    count++;
+    return sequence;
 }
-console.log(sequence);
+console.log(fixbus())
