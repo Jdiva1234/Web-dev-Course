@@ -180,3 +180,19 @@ for(let i = 0; i< 2; i++){
     Do something 
 }
  */
+
+
+ //Creating the Fibonnaci Sequence using an array. create a solution called output. Start from [0,1]. 
+ // making use of flowchart . using draw.io
+ function fibonaciGenerator(n){
+    var arr =[];
+    if(n > 0){
+        arr.push(0)
+    }if (n > 1){
+        arr.push(1)
+    }
+    for(let i = 2; i < n; i++){
+        arr.push(arr[i-2]+arr[i-1])
+    }
+    return arr
+ }
