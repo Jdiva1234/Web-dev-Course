@@ -163,3 +163,20 @@ function fixbus(sequence){
     return sequence;
 }
 console.log(fixbus())
+
+
+
+//Loops in JavaScript 
+
+/**
+while loops: repeatedly run a piece of code 
+while (condition){
+    Do something
+    condition ++
+}
+
+For Loop: how many 
+for(let i = 0; i< 2; i++){
+    Do something 
+}
+ */
