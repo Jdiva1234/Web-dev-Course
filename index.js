@@ -101,10 +101,10 @@
     
 //  */
  
-// // let n = Math.random();
-// // n = n * 12
-// // n= Math.floor(n) + 3;
-// // console.log(n); 
+// let n = Math.random();
+// n = n * 12
+// n= Math.floor(n) + 3;
+// console.log(n); 
 
 // let nameOne = prompt("What is your name?");
 // let nameTwo = prompt("What is their name?");
