@@ -1,3 +1,6 @@
 
-document.querySelector("h1").innerHTML= "GoodBye User";
+// document.querySelector("h1").innerHTML= "GoodBye User";
 var heading = document.firstElementChild.lastElementChild.firstChild;
+heading.innerHTML = "Good morning";
+document.querySelector("input").click();
+document.querySelector("ul").lastElementChild.innerHTML="Johnny";
