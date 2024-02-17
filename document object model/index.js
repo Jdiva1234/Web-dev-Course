@@ -8,3 +8,14 @@ document.getElementsByTagName("li")[2].style.color = "green";
 document.querySelector("li").style.fontSize = "300%";
 
 document.querySelector("button").style.backgroundColor = "yellow";
+
+/**
+Seperation of content.
+HTML - for content only
+CSS-  for styling
+JavaScript-  for behavoiur 
+ */
+
+document.querySelector("h1").classList.add("huge");
+document.querySelector("h1").innerHTML = "<em> Good Bye</em>";
+document.querySelector("a").setAttribute("href", "https://github.com/Jdiva1234");
