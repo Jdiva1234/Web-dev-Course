@@ -7,9 +7,9 @@ document.querySelector(".img2").setAttribute("src","./images/dice" + randomNumbe
 
 if(randomNumber1 >randomNumber2){
 
-document.querySelector("h1").innerHTML = "Player 1 wins";
+document.querySelector("h1").innerHTML = "Player 1 wins 🚩";
 }else if(randomNumber2 > randomNumber1){
-    document.querySelector("h1").innerHTML = "Player 2 wins";
+    document.querySelector("h1").innerHTML = "🚩 Player 2 wins";
 }else{
-    document.querySelector("h1").innerHTML="It is a draw; play again."
+    document.querySelector("h1").innerHTML="It is a draw; play again.🥲"
 }
