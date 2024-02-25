@@ -11,15 +11,24 @@ alert("I just got clicked")
 }
 
 
-//caling a function inside a function 
+//caling a function inside a function called higher order functions
 
 function add(num1, num2){
     return num1 + num2;
 }
 
 function multiply(num1, num2){
-    return num1 * num2
+    return num1 * num2;
 }
+ 
+ function substract(num1, num2){
+    return num1 - num2;
+ }
+
+ function divide(num1, num2){
+    return num1 / num2;
+ }
+
 
 function calculator(num1, num2, operator){
     return operator(num1, num2);
