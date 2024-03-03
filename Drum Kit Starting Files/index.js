@@ -50,6 +50,23 @@ var housekeeper1 = {
 };
 
 
+function Housekeeper (experience, name, hasWorkPermit) {
+this.experience = experience;
+this.name = name;
+this.hasWorkPermit = hasWorkPermit;
+}
+
+var housekeeper1 = new HouseKeeper(9, "JOHNNY, YES");
+
+/**
+an example of a constructor function: they start with capital letters  
+function BellBoy(name, age, hasWorkPermit, languages){
+    this.name = name;
+    this.age = age;
+    this.hasWorkPermit = hasWorkPermit;
+    this.lanaguages = languages;
+}
+ */
 
 
 

@@ -85,7 +85,7 @@
 //     * 14. Nested Function
 //     * 15. Named Function
 //     * 16. Anonymous Function
-//     * 17. Constructor Function
+//     * 17. Constructor Function - is a special function that creates and initializes an object instance of a class. In JavaScript, a constructor gets called when an object is created using the new keyword 
 //     * 18. Factory Function
 //     * 19. Method Function
 //     * 20. Static Function
