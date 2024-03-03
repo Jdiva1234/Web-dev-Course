@@ -43,7 +43,11 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function(){
 });
 }
 
-
+var housekeeper1 = {
+    experience: 10,
+    isSheMarried: false,
+    ceaningSpecialuties: 'clothes washing',
+};
 
 
 
