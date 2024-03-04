@@ -2,12 +2,26 @@
 
 //i used the anonymous function, as you can see the funstion isn't defined
 
+
+//detecting button press
 for(let i =0; i< document.querySelectorAll(".drum").length; i++){
 
 document.querySelectorAll(".drum")[i].addEventListener("click", function(){
     var buttonInnerHTML = this.innerHTML;
+    makeSound(buttonInnerHTML);
     
-    switch (buttonInnerHTML) {
+
+
+});
+}
+//detecting keyboard press 
+
+document.addEventListener("keypress", function(event){
+makeSound(event.key) //functions can also be call back 
+}); 
+
+function makeSound(key){
+switch (key) {
         case "w":
             var audio = new Audio('/Drum Kit Starting Files/sounds/tom-1.mp3');
            audio.play();
@@ -38,22 +52,38 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function(){
         default: console.log(buttonInnerHTML);
             break
     }
-
-
-});
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var housekeeper1 = {
     experience: 10,
     isSheMarried: false,
     ceaningSpecialuties: 'clothes washing',
-};
+    }
+
 
 
 function Housekeeper (experience, name, hasWorkPermit) {
 this.experience = experience;
 this.name = name;
 this.hasWorkPermit = hasWorkPermit;
+this.cleaning = function (){
+        alert("clean the stairs");
+}
 }
 
 var housekeeper1 = new HouseKeeper(9, "JOHNNY, YES");
