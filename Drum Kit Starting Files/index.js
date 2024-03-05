@@ -9,12 +9,15 @@ for(let i =0; i< document.querySelectorAll(".drum").length; i++){
 document.querySelectorAll(".drum")[i].addEventListener("click", function(){
     var buttonInnerHTML = this.innerHTML;
     makeSound(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML)
 });
 }
 //detecting keyboard press 
 
 document.addEventListener("keypress", function(event){
 makeSound(event.key) //functions can also be call back 
+
+buttonAnimation(event.key)
 }); 
 
 function makeSound(key){
@@ -52,7 +55,15 @@ switch (key) {
 }
 
 
+function buttonAnimation(currentKey){
+    var active = document.querySelector("." + currentKey)
+    active.classList.add("pressed");
 
+    setTimeout(function(){
+        active.classList.remove("pressed");
+    }, 200); // Add closing parenthesis here
+
+}
 
 
 
