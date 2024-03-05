@@ -108,13 +108,6 @@ function BellBoy(name, age, hasWorkPermit, languages){
 
 
 
-
-
-
-
-
-
-
 //caling a function inside a function called higher order functions
 
 // function add(num1, num2){
