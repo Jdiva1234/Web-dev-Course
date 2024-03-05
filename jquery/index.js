@@ -1,1 +1,1 @@
-confirm("do you love me?");
+$("h1").css("color","red");
