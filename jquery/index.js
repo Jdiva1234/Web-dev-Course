@@ -8,6 +8,6 @@ $("button").click(function(){
 
 $(document).keypress(function(event){
     $("h1").text(event.key); //this allows it to show on the hello section
-    $("button").text(event.key);
+    $("button").text(event.key); //this allows it to show the keypad pressed in the buttons just like the h1 and the console
     console.log(event.key); //this allows it to show on the console.
 });
