@@ -11,3 +11,7 @@ $(document).keypress(function(event){
     $("button").text(event.key); //this allows it to show the keypad pressed in the buttons just like the h1 and the console
     console.log(event.key); //this allows it to show on the console.
 });
+
+$("h1").mouseover(function(){
+    $("h1").css("color","blue");
+});
