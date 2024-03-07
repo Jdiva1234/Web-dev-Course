@@ -15,3 +15,15 @@ $(document).keypress(function(event){
 $("h1").mouseover(function(){
     $("h1").css("color","blue");
 });
+$("button").on("click", function(){
+    $("h1").slideUp().animate({opacity: 1}).fadeToggle(); //animation using JQuery
+})
+
+/**
+some animations function: 
+fadeIn()
+slideUp()
+slideToggle()
+toggle
+.animate()  custom css
+ */
