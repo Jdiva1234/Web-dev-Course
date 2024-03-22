@@ -49,5 +49,5 @@ function nextSequence() {
   });
 }
 // Triggers again the function after a click
-$(".btn").click(nextSequence);
- 
+$(".btn").click(nextSequence){};
+
