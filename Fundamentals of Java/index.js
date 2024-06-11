@@ -16,7 +16,7 @@
 // restName = restLetter;
 // var together = upperCase + restName;
 // alert("Hello, " + together + " !");
- 
+
 //  function getMilk(money) {
 //     console.log("leaveHouse");
 //     console.log("moveRight");
@@ -51,7 +51,7 @@
 //     console.log("You're " + days + " days, "+ months +" months, and "+ weeks +" weeks left.");
 //     return age * 2;
 // }
-// currentAge(23); 
+// currentAge(23);
 
 // BMI = weight(kg)/ height squared 2 (m2)
 // function bmiCalculator (weight, height){
@@ -68,7 +68,7 @@
 // }
 // bmiCalculator(78, 163);
 
-// /** The different types of functions in JavaScripts are: 
+// /** The different types of functions in JavaScripts are:
 //     * 1. Function Declaration
 //     * 2. Function Expression
 //     * 3. Arrow Function
@@ -85,7 +85,7 @@
 //     * 14. Nested Function
 //     * 15. Named Function
 //     * 16. Anonymous Function
-//     * 17. Constructor Function - is a special function that creates and initializes an object instance of a class. In JavaScript, a constructor gets called when an object is created using the new keyword 
+//     * 17. Constructor Function - is a special function that creates and initializes an object instance of a class. In JavaScript, a constructor gets called when an object is created using the new keyword
 //     * 18. Factory Function
 //     * 19. Method Function
 //     * 20. Static Function
@@ -97,14 +97,14 @@
 //     * 26. Callback Function
 //     * 27. Higher Order Function
 //     * 28. Pure Function
-//     * 29. Impure Function 
-    
+//     * 29. Impure Function
+
 //  */
- 
+
 // let n = Math.random();
 // n = n * 12
 // n= Math.floor(n) + 3;
-// console.log(n); 
+// console.log(n);
 
 // let nameOne = prompt("What is your name?");
 // let nameTwo = prompt("What is their name?");
@@ -135,7 +135,7 @@
 // }
 // }
 // /**
-// Learning Arrays in Javascript 
+// Learning Arrays in Javascript
 // array.length, array.include
 //  */
 // var nameFinder = prompt("What is your name?");
@@ -146,27 +146,24 @@
 //   alert("sorry next time ")
 // }
 
+// var sequence = [];
+// var count = 1;
+// function fixbus(sequence) {
+//   if (count % 3 == 0 && count % 5 == 0) {
+//     sequence.push('FizzBuzz');
+//   } else if (count % 3 == 0) {
+//     sequence.push('Fizz');
+//   } else if (count % 5 == 0) {
+//     sequence.push('Buzz');
+//   } else {
+//     sequence.push(count);
+//   }
+//   count++;
+//   return sequence;
+// }
+// console.log(fixbus());
 
-var sequence = [];
-var count = 1;
-function fixbus(sequence){
-    if(count % 3 == 0 && count % 5 == 0){
-        sequence.push("FizzBuzz")
-    }else if (count % 3 == 0){
-        sequence.push("Fizz");
-    }else if(count % 5 == 0){
-        sequence.push("Buzz");
-    } else {
-        sequence.push(count);
-    }
-    count++;
-    return sequence;
-}
-console.log(fixbus())
-
-
-
-//Loops in JavaScript 
+//Loops in JavaScript
 
 /**
 while loops: repeatedly run a piece of code 
@@ -181,18 +178,25 @@ for(let i = 0; i< 2; i++){
 }
  */
 
+//Creating the Fibonnaci Sequence using an array. create a solution called output. Start from [0,1].
+// making use of flowchart . using draw.io
+// function fibonaciGenerator(n) {
+//   var arr = [];
+//   if (n > 0) {
+//     arr.push(0);
+//   }
+//   if (n > 1) {
+//     arr.push(1);
+//   }
+//   for (let i = 2; i < n; i++) {
+//     arr.push(arr[i - 2] + arr[i - 1]);
+//   }
+//   return arr;
+// }
 
- //Creating the Fibonnaci Sequence using an array. create a solution called output. Start from [0,1]. 
- // making use of flowchart . using draw.io
- function fibonaciGenerator(n){
-    var arr =[];
-    if(n > 0){
-        arr.push(0)
-    }if (n > 1){
-        arr.push(1)
-    }
-    for(let i = 2; i < n; i++){
-        arr.push(arr[i-2]+arr[i-1])
-    }
-    return arr
- }
+var friends = ['Joyce', 'Jen', 'Sarah'];
+friends.push('Justice');
+console.log(friends);
+console.log(friends.length);
+friends.unshift('Dami');
+console.log(friends);

@@ -1,0 +1,6 @@
+JavaScript Arrays 
+
+const friends = ['Fave', 'Justice', 'Lisa']; 
+friends.push('Dennis'); push adds to the end of the array
+friends.unshift('Dennis'); unshift adds to the beginning of the array
+friends.pop(); pop removes the last element of the array
