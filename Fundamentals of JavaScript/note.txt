@@ -7,3 +7,39 @@ friends.pop(); pop removes the last element of the array
 friends.shift(); shift removes the first element of the array
 friends.indexOf('Justice'); indexOf returns the index of the element in the array
 friends.includes('Justice'); includes returns a boolean if the element is in the array
+
+
+JavaScript Objects
+const jonasArrays =[
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+]; this is an array
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+}; this is an object with keys and values, it could be of any types, and we separate them with a comma and a colon. The above example has 5 keys and values. They are also called propertise of the object.
+
+there are many ways of writing an object, but the above is the most common way, which is called object literal syntax. During runtime, the object is created and the properties are added to it, and can be accessed using the dot notation and can be access how we want to. it doesnt have to be in order.
+
+ways to access the object properties are:
+the dot notation: jonas.lastName;
+bracket notation: jonas['lastName'];
+
+when do you use the dot notation and when do you use the bracket notation?
+the dot notation is used when you know the name of the property you want to access, and the bracket notation is used when you want to compute the property name, or when the property name is stored in a variable.
+the bracket notation is also used when the property name is not a valid variable name, like when it has a space in it.
+
+undefined is returned when you try to access a property that doesnt exist in the object.
+
+const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends');
+console.log(jonas[interestedIn]);
+
+jonas.location = 'Portugal'; this is how you add a property to an object
+jonas['twitter'] = '@jonasschmedtman'; this is another way to add a property to an object

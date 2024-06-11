@@ -209,15 +209,53 @@ for(let i = 0; i< 2; i++){
 //   console.log('Jayde is not your friend, love');
 // }
 
-function calcTip(bill) {
-  if (bill >= 50 && bill <= 300) {
-    return bill * 0.15;
-  } else {
-    return bill * 0.2;
-  }
-}
+// function calcTip(bill) {
+//   if (bill >= 50 && bill <= 300) {
+//     return bill * 0.15;
+//   } else {
+//     return bill * 0.2;
+//   }
+// }
 
-const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(tips, total);
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// console.log(tips, total);
+
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  age: 2037 - 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
+};
+console.log(jonas);
+console.log(jonas.age);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+// const interestedIn = prompt(
+//   'What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends'
+// );
+// console.log(jonas[interestedIn]); //this is better for object bracket notation than dot notation. It is more dynamic.
+
+// if (jonas[interestedIn]) {
+//   console.log(jonas[interestedIn]);
+// } else {
+//   console.log(
+//     'Wrong request, please choose between firstName, lastName, age, job, and friends'
+//   );
+// }
+jonas.location = 'Portugal';
+jonas['twitter'] = '@jonasschmedtman';
+console.log(jonas);
+
+//Challenge
+// "Jonas has 3 friends, and his best friend is called Michael"
+console.log(jonas.friends[0]);
+console.log(
+  `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
+);
