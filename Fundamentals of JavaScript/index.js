@@ -194,9 +194,30 @@ for(let i = 0; i< 2; i++){
 //   return arr;
 // }
 
-var friends = ['Joyce', 'Jen', 'Sarah'];
-friends.push('Justice');
-console.log(friends);
-console.log(friends.length);
-friends.unshift('Dami');
-console.log(friends);
+// var friends = ['Joyce', 'Jen', 'Sarah'];
+// friends.push('Justice');
+// // console.log(friends);
+// // console.log(friends.length);
+// friends.unshift('Dami');
+
+// console.log(friends.indexOf('Sarah'));
+// console.log(friends.includes('Jayde'));
+
+// if (friends.includes('Nancy')) {
+//   console.log('call Jayde');
+// } else {
+//   console.log('Jayde is not your friend, love');
+// }
+
+function calcTip(bill) {
+  if (bill >= 50 && bill <= 300) {
+    return bill * 0.15;
+  } else {
+    return bill * 0.2;
+  }
+}
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(tips, total);
