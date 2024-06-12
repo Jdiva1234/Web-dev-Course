@@ -43,3 +43,29 @@ console.log(jonas[interestedIn]);
 
 jonas.location = 'Portugal'; this is how you add a property to an object
 jonas['twitter'] = '@jonasschmedtman'; this is another way to add a property to an object
+
+Object Methods: 
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYear: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+    calcAge: function(birthYear){
+        return 2037 - birthYear;
+    } this is an object method, any funtion attached to a method is called an object method.
+
+    const calcAge = function(birthYear){
+        return 2037 - birthYear;
+    } this is a function
+}; 
+
+calcAge: function(){
+    return 2037 - this.birthYear;
+} this is how you can access the object properties inside the object method. the this keyword refers to the object that the method is attached to.
+
+we can also create new properties inside the object using a "this" keyword. 
+this.age = 2037 - this.birthYear;
