@@ -69,3 +69,9 @@ calcAge: function(){
 
 we can also create new properties inside the object using a "this" keyword. 
 this.age = 2037 - this.birthYear;
+
+Iteration: The for loop. 
+
+for(let rep = 1; rep <= 10; rep++){
+    console.log(`Lifting weights repetition ${rep}`);
+} this is a for loop that runs 10 times.
