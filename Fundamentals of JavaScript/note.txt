@@ -75,3 +75,47 @@ Iteration: The for loop.
 for(let rep = 1; rep <= 10; rep++){
     console.log(`Lifting weights repetition ${rep}`);
 } this is a for loop that runs 10 times.
+
+continue and break statements:
+continue and break statements are used to terminate the loop or skip the current iteration and move to the next one.
+for(let rep = 1; rep <= 10; rep++){
+    console.log(`Lifting weights repetition ${rep}`);
+    if(rep === 3){
+        console.log('You are doing great, keep going!');
+        continue;
+    }
+    if(rep === 5){
+        console.log('You are doing great, keep going!');
+        break;
+    }
+} the continue statement will skip the current iteration and move to the next one, while the break statement will terminate the loop.
+
+Looping Arrays, Breaking and Continuing:
+
+const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+for(let i = jonas.length-1; i >= 0; i--){
+    console.log(jonas[i]);
+} this is how you loop through an array using a for loop.
+
+looping inside a loop 
+for(let exercise = 1; exercise < 4; exercise++){
+    console.log(`Starting exercise ${exercise}`);
+    for(let rep = 1; rep < 6; rep++){
+        console.log(`Lifting weights repetition ${rep} 🏋🏼‍♂️`);
+    }
+} this is how you loop inside a loop.
+
+creating a while loop
+
+let rep = 1;
+while(rep <= 10){
+    console.log(`Lifting weights repetition ${rep}`);
+    rep++;
+} this is how you create a while loop.

@@ -319,15 +319,67 @@ for(let i = 0; i< 2; i++){
 //   console.log('cooking repetition ' + cook);
 // }
 
-const jonas = [
-  'Jonas',
-  'Schmedtmann',
-  1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven'],
-  false,
-];
+// const jonas = [
+//   'Jonas',
+//   'Schmedtmann',
+//   1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'Steven'],
+//   false,
+// ];
 
-for (let i = 0; i < 5; i++) {
-  console.log(jonas[i]);
+// for (let i = 0; i < 5; i++) {
+//   console.log(jonas[i]);
+// }
+
+// const year = [1991, 2007, 1969, 2020];
+// const age = [];
+// for (let i = 0; i < year.length; i++) {
+//   age.push(2037 - year[i]);
+// }
+// console.log(age);
+
+// for (let i = jonas.length - 1; i >= 0; i--) {
+//   console.log(jonas[i]);
+// }
+
+// for (let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`Starting exercise ${exercise}`);
+//   for (let rep = 1; rep < 6; rep++) {
+//     console.log(`Lifting weights repetition ${rep} 🏋🏼‍♂️`);
+//   }
+// }
+
+// let dice = Math.floor(Math.random() * 6) + 1;
+// console.log(dice);
+// while (dice !== 6) {
+//   console.log(`you have rolled a ${dice}`);
+//   dice = Math.floor(Math.random() * 6) + 1;
+//   if (dice === 6) console.log('Loop is about to end');
+// }
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+/* Write your code below. Good luck! 🙂 */
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(bills[i] + tip);
 }
+
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  return sum / arr.length;
+};
+
+console.log(calcAverage(totals));
