@@ -119,3 +119,60 @@ while(rep <= 10){
     console.log(`Lifting weights repetition ${rep}`);
     rep++;
 } this is how you create a while loop.
+
+
+4 steps to solve any problems in programming: 
+1. Understand the problem: by ask the right questions 
+2. Break up the problem into smaller sub-problems: divide and conquer 
+3. dont be afraid to do research: research helps you understand the problem better: Google, MDN, StackOverflow, etc. 
+4. write some some pseudo code: write down the steps you will take to solve the problem.
+
+Keep practicing and you will get better at it.
+
+Coding Challenge #4
+// problem:
+we work for a company building a smart home thermometer. Our most recent task is this: "Given an array of temperatures of one day, calculate the temperature amplitude. Keep in mind that sometimes there might be a sensor error."
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+1. Understanding the problem: what is temperature amplitude? Answer: difference between the highest and the lowest temperature.
+how to compute the max and min temperatures? Answer: use the max and min functions.
+what is a sensor error? and what to do when there is a sensor error? Answer: ignore the sensor error.
+2. Breaking up the problem into sub-problems:
+- how to ignore errors?
+- find the max value in the temperature array
+- find the min value in the temperature array
+- subtract min from max (amplitude) and return it.
+const calcTempAmplitude = function(temps){
+    let max = temps[0];
+    let min = temps[0];
+    for(let i = 0; i < temps.length; i++){
+        const curTemp = temps[i];
+        if(typeof curTemp !== 'number') continue;
+        if(curTemp > max) max = curTemp;
+        if(curTemp < min) min = curTemp;
+    }
+    console.log(max, min);
+    return max - min;
+}; 
+3. Pseudo code:
+
+The Debbuging Process:
+- understand the problem
+- identify the bug;  become aware of the  bug. 
+- find the bug; isolatin where exactly the bug is happening in the code.
+- fix the bug;correct the bug
+- Prevent: test the code to see if the bug is fixed.
+
+
+Coding Challenge #5
+// problem:
+Given an array of forecasted maximum temperatures, the thermometer displays a string with the given temperatures. Example: [17, 21, 23] will be printed as "... 17°C in 1 days ... 21°C in 2 days ... 23°C in 3 days ..."
+Create a function 'printForecast' which takes in an array 'arr' and logs a string like the above to the console. Use the problem-solving framework: Understand the problem and break it up into sub-problems!
+
+
+const printForecast = function(arr){
+    let str = '';
+    for(let i = 0; i < arr.length; i++){
+        str += `${arr[i]}°C in ${i + 1} days ... `;
+    }
+    console.log('...' + str);
+};

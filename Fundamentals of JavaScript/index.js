@@ -358,28 +358,39 @@ for(let i = 0; i< 2; i++){
 //   if (dice === 6) console.log('Loop is about to end');
 // }
 
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-};
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
 
-/* Write your code below. Good luck! 🙂 */
+// /* Write your code below. Good luck! 🙂 */
 
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-const tips = [];
-const totals = [];
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
 
-for (let i = 0; i < bills.length; i++) {
-  const tip = calcTip(bills[i]);
-  tips.push(tip);
-  totals.push(bills[i] + tip);
-}
+// for (let i = 0; i < bills.length; i++) {
+//   const tip = calcTip(bills[i]);
+//   tips.push(tip);
+//   totals.push(bills[i] + tip);
+// }
 
-const calcAverage = function (arr) {
-  let sum = 0;
+// const calcAverage = function (arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum = sum + arr[i];
+//   }
+//   return sum / arr.length;
+// };
+
+// console.log(calcAverage(totals));
+
+const printForecast = function (arr) {
+  let str = '';
+  let temp = `... ${str}^C in 1 days,...${str}^C in 2 days,...${str}^C in 3 days ...`;
   for (let i = 0; i < arr.length; i++) {
-    sum = sum + arr[i];
+    str = arr[i];
   }
-  return sum / arr.length;
+  return temp;
 };
 
-console.log(calcAverage(totals));
+console.log(printForecast([17, 21, 23]));
