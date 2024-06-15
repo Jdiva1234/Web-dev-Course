@@ -386,11 +386,10 @@ for(let i = 0; i< 2; i++){
 
 const printForecast = function (arr) {
   let str = '';
-  let temp = `... ${str}^C in 1 days,...${str}^C in 2 days,...${str}^C in 3 days ...`;
   for (let i = 0; i < arr.length; i++) {
-    str = arr[i];
+    str = str + `...${arr[i]}°C in ${i + 1} days...`;
   }
-  return temp;
+  return str;
 };
 
 console.log(printForecast([17, 21, 23]));
