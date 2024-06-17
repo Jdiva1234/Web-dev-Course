@@ -176,3 +176,7 @@ const printForecast = function(arr){
     }
     console.log('...' + str);
 };
+
+DOM - Document Object Model
+- structured representation of an HTML document, allows JavaScript to access HTML elements and styles to manipulate them. 
+text content of an HTML element: document.querySelector('.message').textContent; textContent is a property that allows you to access the text content of an HTML element.
