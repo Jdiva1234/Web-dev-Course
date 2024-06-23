@@ -20,11 +20,11 @@ let closeModal = function () {
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
 
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape' || e.key === 'Space') {
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape' || event.key === ' ' || event.key === 'Enter') {
+    event.preventDefault();
     if (!modal.classList.contains('hidden')) {
       closeModal();
     }
   }
-  //   console.log(e);
 });
