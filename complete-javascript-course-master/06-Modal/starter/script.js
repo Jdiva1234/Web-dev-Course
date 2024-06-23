@@ -8,7 +8,6 @@ console.log(btnsShowModal);
 
 for (let i = 0; i < btnsShowModal.length; i++) {
   btnsShowModal[i].addEventListener('click', function () {
-    console.log('button clicked');
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
   });
@@ -20,3 +19,12 @@ let closeModal = function () {
 };
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' || e.key === 'Space') {
+    if (!modal.classList.contains('hidden')) {
+      closeModal();
+    }
+  }
+  //   console.log(e);
+});
