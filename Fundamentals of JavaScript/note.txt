@@ -180,3 +180,7 @@ const printForecast = function(arr){
 DOM - Document Object Model
 - structured representation of an HTML document, allows JavaScript to access HTML elements and styles to manipulate them. 
 text content of an HTML element: document.querySelector('.message').textContent; textContent is a property that allows you to access the text content of an HTML element.
+
+
+QueryselectorAll: is used to select all the elements that have the same class name, and it returns a node list.
+querySelector: is used to select the first element that has the class name, and it returns an HTML element.

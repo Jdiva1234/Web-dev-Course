@@ -18,11 +18,11 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(to top left, #28b487, #7dd56f);
+  background: linear-gradient(to top left, #dbe91d, #7dd56f);
 }
 
 .show-modal {
-  font-size: 2rem;
+  font-size: 2r em;
   font-weight: 600;
   padding: 1.75rem 3.5rem;
   margin: 5rem 2rem;
