@@ -5,7 +5,7 @@ let score1 = document.getElementById('score--1');
 const current0 = document.getElementById('current--0');
 const current1 = document.getElementById('current--1');
 let dice = document.querySelector('.dice');
-let btnNew = document.querySelector('.btn--new');
+// let btnNew = document.querySelector('.btn--new');
 let btnRoll = document.querySelector('.btn--roll');
 let btnHold = document.querySelector('.btn--hold');
 
@@ -51,6 +51,25 @@ btnRoll.addEventListener('click', function () {
   }
 });
 
+const init = function () {
+  score0.textContent = 0;
+  score1.textContent = 0;
+  current0.textContent = 0;
+  current1.textContent = 0;
+  dice.classList.add('hidden');
+  player0.classList.remove('player--winner');
+  player1.classList.remove('player--winner');
+  player0.classList.add('player--active');
+  player1.classList.remove('player--active');
+  scores[0] = 0;
+  scores[1] = 0;
+  activePlayer = 0;
+  currentScore = 0;
+  playing = true;
+  btnRoll.disabled = false;
+  btnHold.disabled = false;
+};
+
 btnHold.addEventListener('click', function () {
   if (!playing) return;
   //1. add current score to active player's score
@@ -77,10 +96,19 @@ btnHold.addEventListener('click', function () {
   } else switchPlayer();
 });
 
-let newGame = document.querySelector('.btn--new');
-newGame.addEventListener('click', function () {
-  score0 = document.querySelector('#score--0').textContent = 0;
-  score1 = document.getElementById('score--1').textContent = 0;
-  current0 = document.getElementById('current--0').textContent = 0;
-  current1 = document.getElementById('current--1').textContent = 0;
-});
+// let newGame = document.querySelector('.btn--new');
+// newGame.addEventListener('click', function () {
+//   playing = true;
+//   scores[0] = 0;
+//   scores[1] = 0;
+//   score0 = document.querySelector('#score--0').textContent = 0;
+//   score1 = document.getElementById('score--1').textContent = 0;
+//   current0 = document.getElementById('current--0').textContent = 0;
+//   current1 = document.getElementById('current--1').textContent = 0;
+//   player0.classList.remove('player--winner');
+//   player1.classList.remove('player--winner');
+//   player0.classList.add('player--active');
+//   player1.classList.remove('player--active');
+// });
+
+document.querySelector('.btn--new').addEventListener('click', init);
