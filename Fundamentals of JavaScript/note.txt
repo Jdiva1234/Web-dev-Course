@@ -211,5 +211,25 @@ Theory of JavaScript
     - execution: the engine executes the code line by line.
 
     compilation vs interpretation:
-    - compilation: the code is translated to machine code before it is executed.
-    - interpretation: the code is translated to machine code while it is being executed.
+    - compilation: the code is translated to machine code (ones and zeros) before it is executed.
+    
+    - interpretation: the code is translated to machine code while it is being executed line by line.
+just-in-time compilation: the code is translated to machine code while it is being executed.
+
+How Javascript is been compiled: 
+1. parse the code: the engine parses the code and checks for syntax errors, which can also be knowned as read. It splits the code which are meaningful to the computer.
+2. compilation: the engine compiles the code to machine code, which can also be knowned as compiled. It translates the code to machine code.
+3. execution: the engine executes the code line by line, which can also be knowned as executed. It runs the code line by line.
+
+callback queue: is a data structure that holds all the callback functions that are ready to be executed. it is also called the task queue. example of callback functions are setTimeout, setInterval, click, onclick, and event listeners.
+
+Execution Context: is an environment where the JavaScript code is executed. it consists of two components:
+- variable environment: where the variables live.
+- lexical environment: where the code is written.
+
+A global execution context is when everything in the code is executed in the global scope. it is the default execution context in JavaScript. A function in the global execution can not be executed except it is called.
+
+what is inside a execution context?
+- variable environment: where the variables live. let, const, and var are stored in the variable environment, funstions, and arguments are stored in the variable environment.
+- scope chain: where the code has access to the variables.
+- this keyword: refers to the object that the function is attached to, and it is determined by how the function is called.b 
