@@ -229,7 +229,21 @@ Execution Context: is an environment where the JavaScript code is executed. it c
 
 A global execution context is when everything in the code is executed in the global scope. it is the default execution context in JavaScript. A function in the global execution can not be executed except it is called.
 
-what is inside a execution context?
+##what is inside a execution context?
 - variable environment: where the variables live. let, const, and var are stored in the variable environment, funstions, and arguments are stored in the variable environment.
 - scope chain: where the code has access to the variables.
-- this keyword: refers to the object that the function is attached to, and it is determined by how the function is called.b 
+- this keyword: refers to the object that the function is attached to, and it is determined by how the function is called.
+  
+Scoping and Scope in JavaScript: Concepts 
+- scoping: how our program's variables are organized and accessed by the JavaScript engine. 
+- Lexical scoping: scoping is controlled by the placement of functions and blocks in the code.
+- scope: space or environment in which a certain variable is declared (variable environment in case of functions).There is global scope, function scope and block scope.  
+- scope of variable: region of your code where a certain variable can be accessed. 
+
+3 types of scope in JavaScript:
+- global scope: variables declared outside of any function or block. they are accessible everywhere in the code. outside of any function or block. variables declared in the global scope are attached to the window object. example of global scope is var variables: const  me = "Jonas"; let job = "teacher"; var birthYear = 1991;
+- function scope: variables declared inside a function. they are only accessible inside the function. variables declared inside a function are attached to the variable environment of the function. or can be called local scope. example of function scope is function calcAge(birthYear){const age = 2037 - birthYear; return age;}
+- block scope: variables declared inside a block. they are only accessible inside the block. variables are accessible only inside the block. variables declared inside a block are attached to the variable environment of the block.However, this is only true for let and const variables, not for var variables. functions are also block-scoped.(only in strict mode). example of block scope is if(true){const str = "Hello"; let test = "World"; var str = "Hello"; var test = "World";}
+
+
+
