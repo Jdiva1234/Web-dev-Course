@@ -245,5 +245,11 @@ Scoping and Scope in JavaScript: Concepts
 - function scope: variables declared inside a function. they are only accessible inside the function. variables declared inside a function are attached to the variable environment of the function. or can be called local scope. example of function scope is function calcAge(birthYear){const age = 2037 - birthYear; return age;}
 - block scope: variables declared inside a block. they are only accessible inside the block. variables are accessible only inside the block. variables declared inside a block are attached to the variable environment of the block.However, this is only true for let and const variables, not for var variables. functions are also block-scoped.(only in strict mode). example of block scope is if(true){const str = "Hello"; let test = "World"; var str = "Hello"; var test = "World";}
 
-
-
+Hoisting 
+ hoisting - makes some types of variables accessible/usable in the code before they are actually declared. "variables lifted to the top of their scope".
+- before execution, all variables are hoisted to the top of their scope, and are initialized with the value of undefined.
+- only var variables are hoisted, let and const variables are not hoisted.
+- functions are also hoisted, and can be used before they are declared.
+- hoisting is a reason why it is a good practice to declare your variables at the top of your code. 
+temporal dead zone: the time between the variable being hoisted and being declared. it is the time when the variable is in the TDZ, and it is not accessible.
+  
