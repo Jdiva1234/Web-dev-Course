@@ -253,3 +253,44 @@ Hoisting
 - hoisting is a reason why it is a good practice to declare your variables at the top of your code. 
 temporal dead zone: the time between the variable being hoisted and being declared. it is the time when the variable is in the TDZ, and it is not accessible.
   
+
+  This. keyword in JavaScript
+- this keyword: refers to the object that the function is attached to, and it is determined by how the function is called.
+- this keyword is not static, it depends on how the function is called, and it is determined by the execution context.
+- this keyword is not assigned a value until a function where it is defined is actually called.
+
+
+an arrow function doesnt get it is on this.keyword but inherits it from the parent scope. it is also called a lexical this keyword. it is a good practice to use arrow functions when you want to use the this keyword.
+ 
+ primitive vs reference types
+- primitive types: stored in the call stack, and are stored in the variable environment. they are immutable, and they are copied by value. examples of primitive types are numbers, strings, booleans, undefined, null, and symbols.they aree stored in the call stack
+- reference types: stored in the heap, and are stored in the variable environment. they are mutable, and they are copied by reference. examples of reference types are objects, function and arrays. stored in heaps and the call stack. 
+
+destructing arrays and objects
+it is the process of breaking a complex data structure into a smaller data structure. 
+
+const [x,y,z] = arr;
+console.log(2, 4, 9);
+
+const restaurant = {
+    name: 'Classico Italiano',
+    location: 'Via Angelo Tavanti 23, Firenze, Italy',
+    categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+    starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+    mainMenu: ['Pizza', 'Pasta', 'Risotto']
+};
+const [first, second] = restaurant.categories;
+console.log(first, , second);
+
+
+const [main, , secondary] = restaurant.categories;
+const [starter, mainCourse] = restaurant.starterMenu;
+
+nested arrays 
+const nested = [2, 4, [5, 6]];
+const [i, , [j, k]] = nested;
+console.log(i, j, k); brings out 2, 5, 6
+
+default values
+const [p = 1, q = 1, r = 1] = [8]; when there is no value in the array, the default value is used.
+console.log(p, q, r); brings out 8, 1, 1
